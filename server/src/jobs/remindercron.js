@@ -4,7 +4,7 @@ import { checkAndCreateReminders } from "../utils/checkReminder.js";
 
 // Run daily after every minute
 cron.schedule("* * * * *", async () => {
-  console.log("📅 Running daily reminder check...");
+  // console.log("📅 Running daily reminder check...");
 
   try {
     const users = await User.find({ "preferences.reminderNotifications": true });

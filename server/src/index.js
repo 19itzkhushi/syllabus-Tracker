@@ -2,7 +2,7 @@ import dotenv from "dotenv";
 import connectDB from "./db/db.js";
 import { app } from "./app.js";
 import "./jobs/remindercron.js"; // 🧠 make sure this runs at startup
-import "./jobs/testcron.js"; // 🧠 make sure this runs at startup
+// import "./jobs/testcron.js"; // 🧠 make sure this runs at startup
 import "./jobs/deletecron.js";
 import "./jobs/notiCron.js";
 
