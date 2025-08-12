@@ -2,11 +2,11 @@
 import { useState ,useEffect} from "react";
 import API from "../api/axios";
 import { useParams,useNavigate } from "react-router-dom";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/Card"
 import { Checkbox } from "../components/ui/Checkbox"
 import { Button } from "../components/ui/Button"
-import { Badge } from "../components/ui/badge"
-import { Separator } from "../components/ui/seperator"
+import { Badge } from "../components/ui/Badge"
+import { Separator } from "../components/ui/Seperator"
 import { Edit, Trash2, BookOpen, CheckCircle, Clock, TrendingUp, Calendar, Target,Plus } from "lucide-react"
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "../components/ui/chart"
 import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer } from "recharts"

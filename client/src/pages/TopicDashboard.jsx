@@ -3,13 +3,13 @@ import { useState ,useEffect} from "react"
 import { useParams } from "react-router-dom";
 import { Button } from "../components/ui/Button"
 import { useAuth } from "../context/AuthContext.jsx";
-import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card"
-import { Input } from "../components/ui/input"
-import { Label } from "../components/ui/label"
-import { Textarea } from "../components/ui/textarea"
-import { Checkbox } from "../components/ui/Checkbox"
-import { Badge } from "../components/ui/badge"
-import { Progress } from "../components/ui/progress"
+import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/Card"
+import { Input } from "../components/ui/input.jsx"
+import { Label } from "../components/ui/label.jsx"
+import { Textarea } from "../components/ui/textarea.jsx"
+import { Checkbox } from "../components/ui/Checkbox.jsx"
+import { Badge } from "../components/ui/Badge"
+import { Progress } from "../components/ui/progress.jsx"
 import API from "../api/axios.js";
 import {
   Dialog,

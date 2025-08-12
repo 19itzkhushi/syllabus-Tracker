@@ -2,8 +2,8 @@
 
 import { NotificationItem } from "../components/notification-item"
 import { Button } from "../components/ui/Button"
-import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/card"
-import { Badge } from "../components/ui/badge"
+import { Card, CardContent, CardHeader, CardTitle } from "../components/ui/Card"
+import { Badge } from "../components/ui/Badge"
 import { CheckCheck } from "lucide-react"
 
 export function NotificationDashboard({ notifications, onMarkAsRead, onMarkAllAsRead }) {

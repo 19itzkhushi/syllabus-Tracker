@@ -2,9 +2,9 @@
 import Footer from "./Footer";
 import { useState,useEffect } from "react";
   import { Button } from "../components/ui/Button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/card"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../components/ui/Card"
 import { Progress } from "../components/ui/progress"
-import { Badge } from "../components/ui/badge"
+import { Badge } from "../components/ui/Badge"
 import { useAuth } from "../context/AuthContext";
 import { getWeeklyProgress } from "../lib/getWeeklyProgress";
 import { Input} from "./ui/input";

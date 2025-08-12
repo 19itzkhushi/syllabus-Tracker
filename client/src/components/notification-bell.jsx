@@ -4,7 +4,7 @@ import { Button } from "../components/ui/Button"
 import { Badge } from "../components/ui/Badge"
 import { Popover, PopoverContent, PopoverTrigger } from "../components/ui/popover.jsx"
 import { NotificationItem } from "../components/notification-item"
-import { Separator } from "../components/ui/seperator.jsx"
+import { Separator } from "../components/ui/Seperator.jsx"
 
 export function NotificationBell({ notifications, onMarkAsRead, onMarkAllAsRead }) {
   const [isOpen, setIsOpen] = useState(false)
