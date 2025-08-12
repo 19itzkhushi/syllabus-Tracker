@@ -32,7 +32,9 @@ export default function SignupPage() {
       name: formData.name,
       email: formData.email,
       password: formData.password,
-    });
+    }, {
+          withCredentials: true,
+        });
      
     alert("Signup successful! You can now log in.");
     console.log(res.data);

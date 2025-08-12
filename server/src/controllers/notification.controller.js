@@ -8,7 +8,7 @@ import { User } from "../models/user.model.js";
 const getallnotification = asyncHandler(async(req,res)=>{
     const userId = req.user?._id;
     if(!userId){
-     throw new apiError(400,"unauthorized access")
+     throw new apiError(400,"unauthorized access in notification")
     }
 
     const notifications = await Notification.find({userId}).sort({createdAt : -1});

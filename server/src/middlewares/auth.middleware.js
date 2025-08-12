@@ -2,11 +2,11 @@ import { asyncHandler } from "../utils/asyncHandler.js";
 import jwt from "jsonwebtoken";
 import { User } from "../models/user.model.js";
 import { apiError } from "../utils/apiError.js";
-const verifyJWT = asyncHandler(async (req,res,next)=>{
+const verifyJWT = asyncHandler(async (req,res,next)=>{     
 try {
      const token = req.cookies?.accessToken || req.header("Authorization")?.replace("Bearer ","")
        if(!token){
-        throw new apiError(500,"unauthorized access")
+        throw new apiError(500,"unauthorized access in auth middleware")
        }
        const decodedtoken = jwt.verify(token,process.env.ACCESS_TOKEN_SECRET);
         const user = await User.findById(decodedtoken?._id).select("-password -refreshToken");
