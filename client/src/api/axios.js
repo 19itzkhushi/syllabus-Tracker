@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://syllabus-tracker-backend2.onrender.com", // use your backend URL
+  baseURL: "https://syllabus-tracker-backend2.onrender.com/api/v1", // use your backend URL
   withCredentials: true // if you're using cookies
 });
 
